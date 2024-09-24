@@ -9,26 +9,102 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+  <h1 class="container mx-auto font-bold text-center text-4xl border-4 border-dashed border-slate-200 my-7 py-6 rounded-lg">FAQ about JavaScript</h1>
     <!-- FAQ part -->
-    <div class="collapse collapse-arrow bg-base-200">
+    <div class="container mx-auto collapse collapse-arrow bg-base-200">
         <input type="radio" name="my-accordion-2" checked="checked" />
-        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+        <div class="collapse-title text-xl font-medium">1.What is the Document Object Model (DOM)?</div>
         <div class="collapse-content">
-          <p>hello</p>
+          <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a document (like an HTML or XML document) as a tree of objects, where each node in the tree is an object representing a part of the document.This model is crucial for creating dynamic and interactive web pages, as it enables developers to update the content and structure of a web page without needing to reload the entire page.</p>
         </div>
       </div>
-      <div class="collapse collapse-arrow bg-base-200">
+      <div class="container mx-auto collapse collapse-arrow bg-base-200">
         <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+        <div class="collapse-title text-xl font-medium">2.How do you select an element from the DOM?</div>
         <div class="collapse-content">
-          <p>hello</p>
+          <p>To select an element from the DOM in JavaScript, you can use several methods depending on your needs:<br>
+
+            By ID:<br>
+            JavaScript<br>
+            
+            const element = document.getElementById("elementId");<br>
+            AI-generated code. Review and use carefully. More info on FAQ.<br>
+            This method is the simplest and fastest way to select an element by its unique ID1.<br>
+            By Class Name:<br>
+            JavaScript<br>
+            
+            const elements = document.getElementsByClassName("className");<br>
+            AI-generated code. Review and use carefully. More info on FAQ.<br>
+            This returns a live HTMLCollection of all elements with the specified class name1.<br>
+            By Tag Name:<br>
+            JavaScript<br>
+            
+            const elements = document.getElementsByTagName("tagName");<br>
+            AI-generated code. Review and use carefully. More info on FAQ.<br>
+            This returns a live HTMLCollection of all elements with the specified tag name1.<br>
+            By CSS Selector:<br>
+            Single Element:<br>
+            JavaScript<br>
+            
+            const element = document.querySelector(".className");<br>
+            AI-generated code. Review and use carefully. More info on FAQ.<br>
+            This returns the first element that matches the specified CSS selector2.<br>
+            Multiple Elements:<br>
+            JavaScript<br>
+            
+            const elements = document.querySelectorAll(".className");<br>
+            AI-generated code. Review and use carefully. More info on FAQ.<br>
+            This returns a static NodeList of all elements that match the specified CSS selectors.</p>
         </div>
       </div>
-      <div class="collapse collapse-arrow bg-base-200">
+      <div class="container mx-auto collapse collapse-arrow bg-base-200">
         <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+        <div class="collapse-title text-xl font-medium">3.What is event delegation in the context of the DOM, and why is it useful?</div>
         <div class="collapse-content">
-          <p>hello</p>
+          <p>Event delegation is a technique in JavaScript that leverages event bubbling to handle events at a higher level in the DOM tree rather<br> than directly on the element where the event occurs. Here's a breakdown of how it works and why it's useful:<br>
+
+            How Event Delegation Works<br>
+            Event Bubbling: When an event occurs on an element, it bubbles up to its parent elements. For example, if you click a button inside a div, <br>the click event bubbles up from the button to the div.<br>
+            Delegation: Instead of adding event listeners to multiple child elements, you add a single event listener to a common parent element. This <br>parent element can then handle events from all its children.</p>
+        </div>
+      </div>
+      <div class="container mx-auto collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">4.How do you manipulate an element's attributes and styles using the DOM?</div>
+        <div class="collapse-content">
+          <p>To manipulate an element's attributes and styles using the DOM, you can use JavaScript. Here are some common methods: <br>
+
+            Manipulating Attributes<br>
+            Get an Attribute:<br>
+            JavaScript<br>
+            
+            let element = document.getElementById('myElement');<br>
+            let attrValue = element.getAttribute('attributeName');<br>
+            AI-generated code. Review and use carefully. More info on FAQ.<br>
+            Set an Attribute:<br>
+            JavaScript<br>
+            
+            element.setAttribute('attributeName', 'newValue');<br>
+            AI-generated code. Review and use carefully. More info on FAQ.<br>
+            Remove an Attribute:<br>
+            JavaScript<br>
+            <br>
+            element.removeAttribute('attributeName');<br>
+            AI-generated code. Review and use carefully. More info on FAQ.<br>
+            Manipulating Styles<br>
+            Inline Styles: You can directly set the style properties of an element.<br>
+            JavaScript<br>
+            <br>
+            element.style.color = 'blue';<br>
+            element.style.fontSize = '20px';<br>
+            AI-generated code. Review and use carefully. More info on FAQ.<br>
+            CSS Classes: You can add, remove, or toggle CSS classes.<br>
+            JavaScript<br>
+            
+            element.classList.add('newClass');<br>
+            element.classList.remove('oldClass');<br>
+            element.classList.toggle('activeClass');<br>
+            </p>
         </div>
       </div>
     
