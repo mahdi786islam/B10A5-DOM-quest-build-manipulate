@@ -24,7 +24,10 @@ document.getElementById('feni-donate-btn').addEventListener('click',function(){
                             </p>
                         </div>`;
         console.log(p);
-        document.getElementById('history-container').appendChild(p)
+        document.getElementById('history-container').appendChild(p);
+
+        // document.getElementById('my_modal_1').classList.remove('hidden')
+        my_modal_1.showModal()
     }
     else{
         alert('Invalid Input');
@@ -58,6 +61,7 @@ document.getElementById('noakhali-donate-btn').addEventListener('click',function
                         </div>`;
         console.log(p);
         document.getElementById('history-container').appendChild(p)
+        my_modal_1.showModal()
     }
     else{
         alert('Invalid Input');
@@ -91,6 +95,7 @@ document.getElementById('quota-donate-btn').addEventListener('click',function(){
                         </div>`;
         console.log(p);
         document.getElementById('history-container').appendChild(p)
+        my_modal_1.showModal()
     }
     else{
         alert('Invalid Input');
