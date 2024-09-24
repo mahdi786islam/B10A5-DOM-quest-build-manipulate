@@ -34,7 +34,7 @@
           <div class="flex align-middle justify-center mt-4">
             <div><img src="assets/coin.png" alt="" /></div>
             <div class="ml-2">
-              <h2 class="font-bold text-lg text-slate-600">5500 BDT</h2>
+              <h2 class="font-bold text-lg text-slate-600"><span id="balance">5500</span> BDT</h2>
             </div>
           </div>
         </div>
@@ -59,24 +59,20 @@
           <div class="card-body text-xl lg:w-1/2">
           <div class="flex gap-2 bg-slate-100 p-3 rounded-md w-fit justify-center">
             <div><img src="assets/coin.png" alt=""></div>
-            <p>0 BDT</p>
+            <p ><span id="feni-donation">0</span> BDT</p>
           </div>
-          <h2 class="card-title font-bold">Donate for Flood at Noakhali, Bangladesh</h2>
+          <h2 class="card-title font-bold">Donate for Flood Relief in Feni,Bangladesh</h2>
           <p>
-            The recent floods in Noakhali have caused significant damage to
-            homes infrastructure. Your donation will help provide essential
-            supplies and to those affected by this disaster. Every contribution,
-            big or small, makes difference. Please join us in supporting the
-            relief efforts and making a positive impact on the lives of those in
-            need.
+            The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
           </p>
           <div class="flex flex-col gap-4 mt-6">
             <input
               type="text"
               placeholder="Write Donation Amount"
               class="input input-bordered w-full"
+              id="feni-input"
             />
-            <button class="btn w-full bg-lime-400">Donate Now</button>
+            <button id="feni-donate-btn" class="btn w-full bg-lime-400">Donate Now</button>
           </div>
           </div>
         </div>
@@ -88,19 +84,20 @@
           <div class="card-body text-xl lg:w-1/2">
           <div class="flex gap-2 bg-slate-100 p-3 rounded-md w-fit justify-center">
             <div><img src="assets/coin.png" alt=""></div>
-            <p>600 BDT</p>
+            <p><span id="noakhali-donation">600</span> BDT</p>
           </div>
-          <h2 class="card-title font-bold">Donate for Flood Relief in Feni,Bangladesh</h2>
+          <h2 class="card-title font-bold">Donate for Flood Relief in Noakhali,Bangladesh</h2>
           <p>
-            The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
+            The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
           </p>
           <div class="flex flex-col gap-4 mt-6">
             <input
               type="text"
               placeholder="Write Donation Amount"
               class="input input-bordered w-full"
+              id="noakhali-input"
             />
-            <button class="btn w-full bg-lime-400">Donate Now</button>
+            <button id="noakhali-donate-btn" class="btn w-full bg-lime-400">Donate Now</button>
           </div>
           </div>
         </div>
@@ -112,7 +109,7 @@
           <div class="card-body text-xl lg:w-1/2">
           <div class="flex gap-2 bg-slate-100 p-3 rounded-md w-fit justify-center">
             <div><img src="assets/coin.png" alt=""></div>
-            <p>2400 BDT</p>
+            <p><span id="quota-donation" >2400</span> BDT</p>
           </div>
           <h2 class="card-title font-bold">Aid for Injured in the Quota Movement</h2>
           <p>
@@ -123,8 +120,9 @@
               type="text"
               placeholder="Write Donation Amount"
               class="input input-bordered w-full"
+              id="quota-input"
             />
-            <button class="btn w-full bg-lime-400">Donate Now</button>
+            <button id="quota-donate-btn" class="btn w-full bg-lime-400">Donate Now</button>
           </div>
           </div>
         </div>
@@ -141,6 +139,7 @@
     </div>
     </main>
     <footer></footer>
+    <script src="js/app.js"></script>
   </body>
 </html>
 
