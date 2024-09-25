@@ -106,8 +106,10 @@ document.getElementById('quota-donate-btn').addEventListener('click',function(){
 )
 
 document.getElementById('donation-btn').addEventListener('click', function(){
-    showSectionById('donation-section')
+    showSectionById('donation-section');
+    addBgByClick('donation-btn');
 })
 document.getElementById('history-btn').addEventListener('click', function(){
-    showSectionById('history-section')
+    showSectionById('history-section');
+    addBgByClick('history-btn');
 })
